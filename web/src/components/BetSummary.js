@@ -7,30 +7,19 @@ class BetSummary extends Component {
         amount: 0
     }
 
-    calculateSummary() {
-        const { bets } = this.props;
-        const firstBet = bets[0];
-        const summary = {
-            [firstBet.better]: 0,
-            [firstBet.bettee]: 0
-        };
-
-        bets.forEach((bet) => {
-            summary[bet.better] += bet.outcome ? 5 : -5;
-        });
-
-        if (summary[firstBet.better] > summary[firstBet.bettee]) {
+    setWinner(balance, better, bettee) {
+        if (balance[better] > balance[bettee]) {
             this.setState({
-                winner: firstBet.better,
-                loser: firstBet.bettee,
-                amount: summary[firstBet.better] - summary[firstBet.bettee]
+                winner: better,
+                loser: bettee,
+                amount: balance[better]
             });
         }
-        else if (summary[firstBet.better] < summary[firstBet.bettee]) {
+        else if (balance[better] < balance[bettee]) {
             this.setState({
-                winner: firstBet.bettee,
-                loser: firstBet.better,
-                amount: summary[firstBet.bettee] - summary[firstBet.better]
+                winner: bettee,
+                loser: better,
+                amount: balance[bettee]
             });
         }
         else {
@@ -40,6 +29,23 @@ class BetSummary extends Component {
                 amount: 0
             });
         }
+    }
+
+    calculateSummary() {
+        const { bets } = this.props;
+        const {better, bettee} = bets[0];
+
+        const balance = {
+            [better]: 0,
+            [bettee]: 0
+        };
+
+        bets.forEach((bet) => {
+            balance[bet.better] += bet.outcome ? 5 : -5;
+            balance[bet.bettee] += bet.outcome ? -5 : 5;
+        });
+
+        this.setWinner(balance, better, bettee);
     }
 
     componentDidMount() {

@@ -18,21 +18,21 @@
         "better": "Jon",
         "bettee": "Caroline",
         "bet": "Cuddles won't meow in Caroline's face tonight",
-        "outcome": false
+        "outcome": true
     },
     {
         "id": 4,
         "better": "Caroline",
         "bettee": "Jon",
         "bet": "The soccer game tonight will be exciting and high scoring",
-        "outcome": true
+        "outcome": false
     },
     {
         "id": 5,
         "better": "Caroline",
         "bettee": "Jon",
         "bet": "The soccer game tonight will be exciting and high scoring",
-        "outcome": true
+        "outcome": false
     },
     {
         "id": 6,

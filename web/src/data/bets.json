@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "better": "Caroline",
+        "bettee": "Jon",
+        "bet": "Jon will put away his washing today",
+        "outcome": true
+    },
+    {
+        "id": 2,
+        "better": "Jon",
+        "bettee": "Caroline",
+        "bet": "Caroline will win more bets than Jon",
+        "outcome": false
+    },
+    {
+        "id": 3,
+        "better": "Jon",
+        "bettee": "Caroline",
+        "bet": "Cuddles won't meow in Caroline's face tonight",
+        "outcome": false
+    },
+    {
+        "id": 4,
+        "better": "Caroline",
+        "bettee": "Jon",
+        "bet": "The soccer game tonight will be exciting and high scoring",
+        "outcome": true
+    },
+    {
+        "id": 5,
+        "better": "Caroline",
+        "bettee": "Jon",
+        "bet": "The soccer game tonight will be exciting and high scoring",
+        "outcome": true
+    },
+    {
+        "id": 6,
+        "better": "Jon",
+        "bettee": "Caroline",
+        "bet": "Our app will be really cool",
+        "outcome": true
+    }
+]

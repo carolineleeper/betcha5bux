@@ -1,0 +1,46 @@
+.history-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.history-wrapper {
+    padding: 2rem;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+    color: #444;
+}
+
+.bet-wrapper {
+    padding: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.bet-grid {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 2fr 10fr 0.5fr;
+    grid-column-gap: 1rem;
+}
+
+.bet-grid > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person1 {
+    background-color: rgb(193, 232, 255);
+    /* padding: 0.2rem 0.4rem; */
+}
+
+.person2 {
+    background-color: rgb(248, 211, 255);
+    /* padding: 0.2rem 0.4rem; */
+}
+
+.bet-grid > span.bet-text {
+    text-align: left;
+    justify-content: left;
+}

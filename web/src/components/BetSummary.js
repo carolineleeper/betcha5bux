@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './BetSummary.css';
 
 class BetSummary extends Component {
     state = {
@@ -56,10 +57,12 @@ class BetSummary extends Component {
         return this.state.amount === 0 ? (
             <p>It's a tie!</p>
         ) : (
-            <>
-                <p>{this.state.loser} owes {this.state.winner}</p>
-                <p>${this.state.amount}</p>
-            </>
+            <div className="summary-container">
+                <div className="summary-wrapper">
+                    <p className="">{this.state.loser} owes {this.state.winner}</p>
+                    <p>${this.state.amount}</p>
+                </div>
+            </div>
         )
     }
 }

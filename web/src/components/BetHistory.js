@@ -5,15 +5,17 @@ const renderBet = (bet) => {
     return (
         <div className="bet-wrapper" key={bet.id}>
             <p className="bet-grid">
-                <span className={bet.better === 'Caroline' ? 'person1' : 'person2'}>
+                <span className={`${bet.better === 'Caroline' ? 'person1' : 'person2'} one`}>
                     {bet.better}
                 </span>
-                <span>bet</span>
-                <span className={bet.bettee === 'Caroline' ? 'person1' : 'person2'}>
+                <span className="two">bet</span>
+                <span className={`${bet.bettee === 'Caroline' ? 'person1' : 'person2'} three`}>
                     {bet.bettee}
                 </span>
-                <span className="bet-text">{bet.bet}</span>
-                <span>{bet.outcome ? "+$5" : "-$5"}</span>
+                <span className="bet-text four">{bet.bet}</span>
+                {bet.outcome === null ? <span className="five">pending</span> : (
+                    <span className="five">{bet.outcome ? "+$5" : "-$5"}</span>
+                )}
             </p>
         </div>
     );

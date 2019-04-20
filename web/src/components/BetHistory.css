@@ -44,3 +44,47 @@
     text-align: left;
     justify-content: left;
 }
+
+@media only screen and (max-width: 768px) {
+    .bet-wrapper {
+        margin-bottom: 1rem;
+    }
+
+    .bet-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 1rem;
+    }
+
+    .one {
+        grid-column: 1;
+    }
+
+    .two {
+        grid-column: 2;
+    }
+
+    .three {
+        grid-column: 3;
+    }
+
+    .four {
+        grid-column: 1 / 4;
+    }
+
+    .five {
+        grid-column: 3 / 4;
+    }
+
+    .bet-grid > span.bet-text {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .person1 {
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .person2 {
+        padding: 0.2rem 0.4rem;
+    }
+}

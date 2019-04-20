@@ -13,3 +13,15 @@
     box-shadow: 0 6px 8px rgba(0,0,0,0.2);
     color: #444;
 }
+
+@media only screen and (max-width: 768px) {
+    .summary-container {
+        font-size: 2rem;
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .summary-wrapper {
+        padding: 1rem 2rem;
+    }
+}

@@ -40,5 +40,12 @@
         "bettee": "Caroline",
         "bet": "Our app will be really cool",
         "outcome": true
+    },
+    {
+        "id": 7,
+        "better": "Jon",
+        "bettee": "Caroline",
+        "bet": "Our app will handle unresolved bets",
+        "outcome": null
     }
 ]
